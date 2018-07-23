@@ -1,0 +1,28 @@
+.container{
+    font:bold;
+}
+#header{
+    text-align: center;
+    font: bold;
+    text-align: center;
+    background-color: rgb(48, 91, 170);
+    padding:10px;
+    /* height: 100px; */
+}
+.form-group{
+    /* border: 2px solid gray; */
+    font: bold;
+}
+.form,.schedule-table{
+    border: 2px solid rgb(97, 158, 226);
+    
+    overflow: hidden;
+    border-radius: 6px; 
+}
+form{
+    padding: 20px;
+}
+h3,h4{
+    background-color: rgb(115, 176, 236);
+    padding: 5px;
+}
