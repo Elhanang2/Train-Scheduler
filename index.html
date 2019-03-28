@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
+    <title>Train Scheduler</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
@@ -26,6 +26,7 @@
             <div class="schedule-table">
                 <table class="table">
                     <h2>Current Train Schedule</h2>
+                    <!-- train schedule table heading -->
                     <thead>
                         <tr>
                             <th scope="col">Train Name</th>
@@ -37,14 +38,14 @@
                         </tr>
 
                     </thead>
-                        <tbody id="train-output">
-                            <!-- <tr class="train-row">
-
-                            </tr> -->
-                        </tbody>
+                    <!-- train schedule list -->
+                    <tbody id="train-output">
+                        
+                    </tbody>
                 </table>
             </div>
             <br>
+            <!-- form to add train destination start time and frequency -->
             <div class="form">
                 <h2>Add Train</h2>
                 <form>
@@ -76,12 +77,12 @@
     </div>
     <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase-auth.js"></script>
-<script src="https://www.gstatic.com/firebasejs/5.3.0/firebase-database.js"></script>
-<script src="https://www.gstatic.com/firebasejs/5.3.0/firebase-firestore.js"></script>
-<script src="https://www.gstatic.com/firebasejs/5.3.0/firebase-messaging.js"></script>
-<script src="https://www.gstatic.com/firebasejs/5.3.0/firebase-functions.js"></script> 
-    <!-- <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script> -->
-    
+    <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase-messaging.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase-functions.js"></script> 
+        <!-- <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script> -->
+        
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
     <!-- <script src="moment.js"></script> -->

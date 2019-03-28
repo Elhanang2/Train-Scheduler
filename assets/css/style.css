@@ -4,11 +4,9 @@
     font-family: 'Domine', serif;
     font:bold;
     padding: 30px;
-    /* background-color: white; */
 }
 
 .form-group{
-    /* border: 2px solid gray; */
     font: bold;
     backface-visibility: hidden;
 }
