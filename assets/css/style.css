@@ -1,28 +1,52 @@
-.container{
+body{
+    /* background-color: rgb(234, 241, 171); */
+}
+.form-container{
+    background-color: rgb(243, 252, 250);
+    font-family: 'Domine', serif;
     font:bold;
+    padding: 30px;
+    /* background-color: white; */
 }
-#header{
-    text-align: center;
-    font: bold;
-    text-align: center;
-    background-color: rgb(48, 91, 170);
-    padding:10px;
-    /* height: 100px; */
-}
+
 .form-group{
     /* border: 2px solid gray; */
     font: bold;
+    backface-visibility: hidden;
 }
 .form,.schedule-table{
-    border: 2px solid rgb(97, 158, 226);
-    
+    border: 2px solid rgb(64, 186, 243);
+    background-color: rgb(248, 247, 244);
     overflow: hidden;
     border-radius: 6px; 
 }
 form{
     padding: 20px;
 }
-h3,h4{
+h2{
     background-color: rgb(115, 176, 236);
-    padding: 5px;
+    padding: 20px;
+}
+.train-image img{
+    width: 100%;
+    height: 500px;
+    border-radius: 5px;
+}
+.train-image{
+   position: relative;
+}
+.train-heading{
+    padding:0;
+    position: absolute;
+    text-align: center;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.train-heading h1{
+    font-size: 10.2vmin;
+}
+thead{
+    font-size: 20px;
 }

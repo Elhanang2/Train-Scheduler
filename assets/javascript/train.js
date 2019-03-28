@@ -90,7 +90,7 @@ $(".submit-button").on("click",function(event){
         
           
       //create table colomn tag and append to new created table row
-      var c=$("<tr>")
+      var c=$("<tr>");
         c.append($("<td>").html(trainName));
         c.append($("<td>").html(destination));
         c.append($("<td>").html(frequency)); 
