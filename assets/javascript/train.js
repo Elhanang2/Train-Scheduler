@@ -48,7 +48,7 @@ $(document).ready(function() {
         return false;   
       
   });
-   
+  
   //function on add child get snapshot of the data
   database.ref().on("child_added", function(Snapshot) {
   
@@ -90,6 +90,7 @@ $(document).ready(function() {
       c.append($("<td>").html(frequency)); 
       c.append($("<td>").html(nextarrival));
       c.append($("<td>").html(minAway));
+      c.append($('<button type="button" class="btn btn-danger btn-sm delete-btn" >X</button>'))
       
       //append table row in id train-output 
       $(".table #train-output").append(c);
@@ -98,6 +99,10 @@ $(document).ready(function() {
     }, function(errorObject) {
       console.log("Errors handled: " + errorObject.code);
   });
-     
-        
+  
+  $("#train-output").on("click", ".delete-btn", function(){
+    if(confirm("Are You sure?")){
+    $(this).closest("tr").remove();
+    }
+  }) 
 });
