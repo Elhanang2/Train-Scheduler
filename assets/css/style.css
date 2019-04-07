@@ -15,6 +15,7 @@
     background-color: rgb(248, 247, 244);
     overflow: hidden;
     border-radius: 6px; 
+    overflow: hidden;
 }
 form{
     padding: 20px;
@@ -46,8 +47,10 @@ h2{
 thead{
     font-size: 20px;
 }
-
-@media only screen and (max-width: 650px){
+.btn{
+    margin: 5px;
+}
+@media only screen and (max-width: calc(980px + scrollbar-width)-mm201){
     thead{
         font-size: 16px;
     }

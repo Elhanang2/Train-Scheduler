@@ -34,7 +34,7 @@
                             <th scope="col">Frequency (min)</th>
                             <th scope="col">Next Arrival</th>
                             <th scope="col">Minutes Away</th>
-                            
+                            <th scope="col"></th>
                         </tr>
 
                     </thead>
@@ -47,7 +47,7 @@
             </div>
             <br>
             <!-- form to add train destination start time and frequency -->
-            <div class="form">
+            <div class="form" id="form">
                 <h2>Add Train</h2>
                 <form>
                     <div class="form-group">
@@ -69,7 +69,10 @@
                         <input type="text" class="form-control" id="frequency" placeholder="20min">
                     </div>
                     
-                    <button type="submit" class="btn btn-primary submit-button">Submit</button>
+                    <button type="submit" id="submit-button" class="btn btn-primary ">Submit</button>
+                    <!-- <button style="display: none" id="submit-button1" class="btn btn-primary ">Update</button>
+                    <button style="display: none" id="submit-button2" class="btn btn-primary ">Cancel</button> -->
+                    <!-- <button type="submit" id="update-button" class="btn btn-primary ">Update</button> -->
                 </form>
             </div>
             
@@ -84,8 +87,9 @@
     <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase-functions.js"></script> 
         <!-- <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script> -->
         
-    <script src="https://code.jquery.com/jquery.js"></script>
-    
+    <!-- <script src="https://code.jquery.com/jquery.js"></script> -->
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
     <!-- <script src="moment.js"></script> -->
     <script src="assets/javascript/train.js"></script>
