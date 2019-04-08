@@ -1,6 +1,6 @@
 
 // $(document).ready(function() {
-  
+  //firebase api key 
   var config = {
     apiKey: "AIzaSyC5_bIdWSruFN-5Msy_rpjIQTN-mdbhsrs",
     authDomain: "train-schedule-f8b18.firebaseapp.com",
@@ -9,21 +9,23 @@
     storageBucket: "train-schedule-f8b18.appspot.com",
     messagingSenderId: "1091618328222"
   };
+  // Initialize Firebase
   firebase.initializeApp(config);
+  //create variable  counter as a function of time to use as an id
   var d= new Date();
   var t=d.getTime();
   var counter = t;
   // Create a variable to reference the database
   var database = firebase.database();
    
-  // Initialize Firebase
+  
   
   
     //initialization and declare 
   
-  var nextarrival; 
+    var nextarrival; 
   
- //on click submit get the value and push it to the firebase to store  
+  //onclick submit get the value and push it to the firebase to store  
   $("#submit-button").on("click",function(event){
       event.preventDefault();
       
@@ -41,6 +43,7 @@
         return false;   
       
   });
+  //function to record train information in firebase 
   function trainrecord(trainName, destination, firstTrainTime,frequency){
     console.log(counter)
        counter+=1;
@@ -57,15 +60,16 @@
      reset();
 
   }
+  //function to empitying form
   function reset(){
-    //empitying the form 
-  $("#train-name").val("");
-  $("#destination").val("");
-  $("#train-time").val("");
-  $("#frequency").val("");
-}
-  readSchedule();
-  var trainData;
+
+    $("#train-name").val("");
+    $("#destination").val("");
+    $("#train-time").val("");
+    $("#frequency").val("");
+  }
+    readSchedule();
+    var trainData;
   //function on add child get snapshot of the data
   function readSchedule(){
     database.ref("trains/").on("child_added", function(Snapshot) {
@@ -119,20 +123,16 @@
     });
   }
  
-  var database = firebase.database();
-  
-    
-  
+  // function to delete train information from firebase database
   function deletetrainSchedule(id){
 
-  console.log("idddd"+ id)
-    
+  
     if(confirm("Are You sure?")){
       $(this).closest("tr").remove();
       firebase.database().ref("trains/"+ id).remove();
       reset();
       window.location.reload();
-      // onChildRemoved(this,dataSnapshot);
+      
     }
     
   }
