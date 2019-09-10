@@ -31,18 +31,20 @@ h2{
 }
 .train-image{
    position: relative;
+   opacity: 0.9;
 }
 .train-heading{
     padding:0;
     position: absolute;
     text-align: center;
-    color: white;
-    top: 50%;
+    color: rgb(230, 224, 224);
+    top: 40%;
     left: 50%;
     transform: translate(-50%,-50%);
+    text-shadow: 2px 2px 2px black;
 }
 .train-heading h1{
-    font-size: 12.2vmin;
+    font-size: 10.0vmin;
 }
 thead{
     font-size: 20px;
