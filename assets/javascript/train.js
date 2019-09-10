@@ -107,11 +107,11 @@
       
       //create table colomn tag and append to new created table row
       var c=$("<tr>");
-        c.append($("<td data-label='Train Name'>").html(trainName));
-        c.append($("<td data-label='Destination'>").html(destination));
-        c.append($("<td data-label='Frequency'>").html(frequency)); 
-        c.append($("<td data-label='Next Arrival'>").html(nextarrival));
-        c.append($("<td data-label='Minutes Away'>").html(minAway));
+        c.append($("<td data-label='Train Name' >").html(trainName));
+        c.append($("<td data-label='Destination' >").html(destination));
+        c.append($("<td data-label='Frequency' >").html(frequency)); 
+        c.append($("<td data-label='Next Arrival' >").html(nextarrival));
+        c.append($("<td data-label='Minutes Away' >").html(minAway));
         c.append($('<td><button type="submit" onclick="deletetrainSchedule(trainData.id)" class="btn btn-danger btn-sm delete-btn" >Delete</button></td>'))
         
         //append table row in id train-output 

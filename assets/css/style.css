@@ -52,30 +52,12 @@ thead{
 }
 
 
-/* table { 
+table { 
     table-layout:fixed;
 }
-td{
-    width: 20%;
-} */
-/*@media only screen and (max-width: 780px){
-    thead{
-        font-size: 16px;
-    }
-    .form-container{
-        padding: 0;
-    }
-   
-    .delete-btn{
-        font-size: 12px;
-        margin: 0;
-    }
-    td, th { 
-        margin: 0;
-        border: solid red;
-        overflow: hidden; 
-        text-overflow: ellipsis; 
-        word-wrap: break-word;
-    }
-    
-}*/
+td, th { 
+    margin: 0;
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    word-wrap: break-word;
+}

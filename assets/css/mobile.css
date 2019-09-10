@@ -1,4 +1,4 @@
-@media screen and (max-width: 780px){
+@media only screen and (max-width: 650px){
     table{
         border: 0;
     }
@@ -14,7 +14,7 @@
     table td{
         display: block;
         text-align: right;
-        font-size: 13px;
+        font-size: 16px;
         /* float: right; */
     }
     table td:last-child {
@@ -30,3 +30,17 @@
         line-height: 0!important;
     }
 }
+/* @media screen and (max-width:780px ){
+    table td::before {
+        content: attr(data-tab);
+        float: left;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    table td{
+        display: flex;
+        text-align: right;
+        font-size: 16px;
+        float: right;
+    }
+} */
