@@ -1,0 +1,32 @@
+@media screen and (max-width: 780px){
+    table{
+        border: 0;
+    }
+    table thead {
+        display: none;
+    }
+    table tr{
+        margin-bottom: 20px;
+        display: block;
+        border-bottom: 2px solid #ddd;
+        box-shadow: 2px 2px 1px #dadada;
+    }
+    table td{
+        display: block;
+        text-align: right;
+        font-size: 13px;
+        /* float: right; */
+    }
+    table td:last-child {
+        border-bottom: 0;
+    }
+    table td::before {
+        content: attr(data-label);
+        float: left;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    tbody{
+        line-height: 0!important;
+    }
+}

@@ -8,12 +8,12 @@
 
 .form-group{
     font: bold;
-    width: 100%;
+    min-width: 100%;
 }
 .form,.schedule-table{
     border: 2px solid rgb(64, 186, 243);
     background-color: rgb(248, 247, 244);
-    overflow: hidden;
+    /* overflow: hidden; */
     border-radius: 6px; 
     overflow: hidden;
 }
@@ -48,11 +48,34 @@ thead{
     font-size: 20px;
 }
 .btn{
-    margin: 5px;
+    /* margin: 5px; */
 }
-@media only screen and (max-width: calc(980px + scrollbar-width)-mm201){
+
+
+/* table { 
+    table-layout:fixed;
+}
+td{
+    width: 20%;
+} */
+/*@media only screen and (max-width: 780px){
     thead{
         font-size: 16px;
     }
+    .form-container{
+        padding: 0;
+    }
+   
+    .delete-btn{
+        font-size: 12px;
+        margin: 0;
+    }
+    td, th { 
+        margin: 0;
+        border: solid red;
+        overflow: hidden; 
+        text-overflow: ellipsis; 
+        word-wrap: break-word;
+    }
     
-}
+}*/
