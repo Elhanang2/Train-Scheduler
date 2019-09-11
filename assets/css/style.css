@@ -29,30 +29,31 @@ h2{
     height: 500px;
     border-radius: 5px;
 }
+.header-container{
+    position: relative;
+}
 .train-image{
    position: relative;
    opacity: 0.9;
 }
 .train-heading{
     padding:0;
+    /* margin: auto; */
     position: absolute;
+    /* display: flex;
+    flex-direction: row;
+    justify-content: center; */
     text-align: center;
     color: rgb(230, 224, 224);
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+    top: 150px;
     text-shadow: 2px 2px 2px black;
 }
 .train-heading h1{
-    font-size: 10.0vmin;
+    font-size: 10.0vmin;  
 }
 thead{
     font-size: 20px;
 }
-.btn{
-    /* margin: 5px; */
-}
-
 
 table { 
     table-layout:fixed;
